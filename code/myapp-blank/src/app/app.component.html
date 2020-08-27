@@ -1,0 +1,30 @@
+<ion-app>
+  <!-- <ion-router-outlet></ion-router-outlet> -->
+
+  <ion-menu side="start" type="overlay">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-title>
+          My App
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list class="menu-items" lines="none">
+        <ion-item color="secondary" [routerLink]="['/tabs/tab1']"
+          ><ion-icon name="home"></ion-icon>
+          <p>HOME</p>
+        </ion-item>
+        <ion-item color="secondary" class="active" [routerLink]="['/chat']"
+          ><ion-icon name="construct-outline"></ion-icon>
+          <p>SUPPORT</p></ion-item
+        >
+        <ion-item color="secondary" [routerLink]="['/contact']"
+          ><ion-icon name="call-outline"></ion-icon>
+          <p>CONTACT US</p></ion-item
+        >
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>

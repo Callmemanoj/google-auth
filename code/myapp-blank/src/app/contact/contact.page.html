@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contact Us</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+  <ion-item color="warning">
+    <ion-icon class="icons" name="mail-outline"></ion-icon>
+    <ion-title>manoj@gmail.com</ion-title>
+  </ion-item>
+  <ion-item color="warning">
+    <ion-icon class="icons" name="call-outline"></ion-icon>
+    <ion-title>+91 78933 38485</ion-title>
+  </ion-item>
+  <ion-item color="warning">
+    <ion-icon class="icons" name="location-outline"></ion-icon>
+    <ion-title>Hyderabad</ion-title>
+  </ion-item>
+  <ion-item color="warning">
+    <div class="col-lg-3 col-md-3 col-sm-3"></div>
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <a href="https://www.facebook.com/profile.php?id=100003830661137">
+        <ion-icon name="logo-facebook"></ion-icon
+      ></a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <a href="https://twitter.com/156cd0da83d346d">
+        <ion-icon name="logo-twitter"></ion-icon
+      ></a>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3">
+      <a href="https://www.instagram.com/itsme._.manu/">
+        <ion-icon name="logo-instagram" id="insta"></ion-icon
+      ></a>
+    </div>
+  </ion-item>
+  <br />
+  <marquee><h4>CopyRight &#169; by Manoj</h4></marquee>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1" [routerLink]="['../tabs/tab1']">
+      <ion-icon name="person-add-outline"></ion-icon>
+      <ion-label>Register</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2" [routerLink]="['../tabs/tab2']">
+      <ion-icon name="log-in-outline"></ion-icon>
+      <ion-label>Login</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab3" [routerLink]="['../tabs/tab3']">
+      <ion-icon name="exit-outline"></ion-icon>
+      <ion-label>LogOut</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

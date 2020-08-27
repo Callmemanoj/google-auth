@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "tabs.page.scss"
+    ],
+    "names": [],
+    "file": "tabs.page.css"
+}

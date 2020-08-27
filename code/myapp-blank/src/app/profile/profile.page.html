@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">
+        Enter First Name
+      </ion-label>
+      <ion-input
+        type="text"
+        required
+        [(ngModel)]="profile.firstName"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        Enter Last Name
+      </ion-label>
+      <ion-input
+        type="text"
+        required
+        [(ngModel)]="profile.lastName"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">
+        Enter User Name
+      </ion-label>
+      <ion-input
+        type="text"
+        required
+        [(ngModel)]="profile.username"
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Enter Mobile Number</ion-label>
+      <ion-input type="number" [(ngModel)]="profile.mobile"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button clear and block (click)="createProfile()" slot="end">
+        Create Profile
+      </button>
+    </ion-item>
+  </ion-card>
+</ion-content>
+<ion-nav #ionNav></ion-nav>

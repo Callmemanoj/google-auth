@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Register Here</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item color="primary">
+      <ion-label position="floating">
+        Enter User Name or Email
+      </ion-label>
+      <ion-input type="text" required [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <br />
+    <ion-item color="primary">
+      <ion-label position="floating">
+        Enter Password
+      </ion-label>
+      <ion-input type="password" required [(ngModel)]="user.upwd"></ion-input>
+    </ion-item>
+    <br />
+    <ion-item color="primary">
+      <ion-button color="danger" slot="end" (click)="register(user)"
+        ><ion-icon name="person-add-outline"></ion-icon>Register</ion-button
+      >
+    </ion-item>
+  </ion-card>
+</ion-content>

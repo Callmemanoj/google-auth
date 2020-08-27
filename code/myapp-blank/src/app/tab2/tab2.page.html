@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login Here</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="danger">
+    <ion-input
+      type="text"
+      name="uname"
+      [(ngModel)]="user.email"
+      placeholder="Enter User Name"
+    ></ion-input>
+    <ion-input
+      type="password"
+      name="upwd"
+      [(ngModel)]="user.upwd"
+      placeholder="Enter Password"
+    ></ion-input>
+    <ion-button (click)="login(user)" expand="block"
+      ><ion-icon name="log-in-outline"></ion-icon>Login</ion-button
+    >
+    <ion-button (click)="google()" expand="block"
+      ><ion-icon name="logo-google"></ion-icon>Login With Google</ion-button
+    >
+  </ion-card>
+</ion-content>

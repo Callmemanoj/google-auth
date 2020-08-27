@@ -1,0 +1,34 @@
+p {
+  padding-left: 50px;
+  color: black;
+  padding-top: 20px;
+}
+
+ion-title {
+  text-align: center;
+}
+
+.menu-items {
+  margin: 0px;
+}
+
+.menu-items ion-icon {
+  margin-right: 20px;
+  color: black;
+}
+
+.menu-items ion-item {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.menu-items .active {
+  border-left: 5px solid;
+  color: #628cff;
+  padding-left: 15px;
+}
+
+.menu-items .active ion-icon {
+  color: black;
+}
+/*# sourceMappingURL=app.component.css.map */

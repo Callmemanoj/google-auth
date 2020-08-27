@@ -1,0 +1,9 @@
+{
+  "name": "myapp-blank",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "c5a7ffff"
+}
